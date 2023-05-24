@@ -8,10 +8,15 @@ class Trem:
     self.__nome = nome
     self.__destino = destino
     self.__velocidade = 0
+    self.__motor = False
 
   #Apresentação do Trem até o destino
   def apresentar(self):
     print(f'O trem {self.__nome} está se deslocando até a estação {self.__destino}.')
+
+  def ligar(self):
+    self.__motor = True
+    print(f'O motor do {self.__nome} está ligado.')
 
   #Deslocamento até as estações
   def estacoes(self,x):
